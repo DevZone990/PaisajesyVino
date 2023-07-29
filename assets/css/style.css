@@ -93,6 +93,7 @@ header{
     z-index: 10000;
 }
 header .container {
+    height: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -175,6 +176,9 @@ header .container .car span{
     position: relative;
 }
 
+.car-2{
+  display: none;
+}
 /*menu-carrito*/
 .dropdown-menu{
     position: absolute;
@@ -888,14 +892,14 @@ header .container .car span{
 
 @media (max-width: 525px){
 header{
-  height: 5rem;
+  height: 7rem;
 }
 
 header .container ul li a{
   color:#ccc;
   display: block;
   margin: 3rem;
-  padding: 1rem;
+  padding: .5rem;
   font-size:2.5rem ;
   text-align:center;
 }
@@ -928,11 +932,20 @@ header .container .car svg{
   font-size: 1.5rem;
 }
 
-.menu-icon{
-  display: block;
-  z-index: 3444444;
+.dropdown-menu{
+  position: absolute;
+  top: 100%;
+  left: 60%;
 }
 
+.menu-icon{
+  display: flex;
+  z-index: 3444444;
+}
+.menu-icon span{
+  font-size: 5rem;
+  padding-top: .5rem;
+}
 .icomin{
   color: #cccccc;
   font-size: 3rem;
@@ -952,9 +965,11 @@ header .container .car svg{
   color: #f2f2f2;
 }
 .car{
-  position: absolute;
-  top: -7%;
-  right: 15%;
+  display: none;
+}
+.car-2{
+  position: relative;
+  display: block;
 }
 
 .home .btn{
