@@ -62,6 +62,7 @@ body {
   }
   
   .button:hover{
+    background: var(--segundo-color);
     letter-spacing: .2rem;
     transform: scale(.9);
     transition: .5s;
@@ -93,7 +94,7 @@ header{
     z-index: 10000;
 }
 header .container {
-    height: 6rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +105,7 @@ header .container li {
     text-decoration: none;
    
 }
-header .container ul li a{
+header .container ul li .a{
     font-family:'Roboto',cursive;
     color: var(--tercer-color);
     transition: .3s;
@@ -113,7 +114,7 @@ header .container ul li a{
     position: relative;
     right: 3rem;
 }
-header .container ul li a:hover {
+header .container ul li .a:hover {
     letter-spacing: 2px;
     padding-bottom: .5rem;
     border-bottom:1px solid var(--segundo-color) ;
@@ -190,52 +191,60 @@ header .container .car span{
     padding: .5rem 0;
     margin: .125rem 0 0;
     font-size: 1rem;
-    color: #212529;
+    color: var(--tercer-color);
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: var(--primer-color);
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.15);
     border-radius: .25rem;
     overflow-y: scroll;
 }
+
+.table{
+  margin: 1rem 0;
+}
+
+.table th{
+  padding: 1rem;
+}
+
+.table img{
+  height: 5rem;
+  width: 5rem;
+}
+
 #vaciar-carrito, #procesar-pedido {
-    padding: 8px;
-    margin-top:2px;
+    padding: .5rem;
+    margin-top: 2rem;
     text-align: center;
 }
 .dropdown-menu.show {
     display: block;
 }
 .button-vaciar{
-    background:#17A2B8;
-    text-decoration: none;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 5px;
-    color:  #f2f2f2;
-    font-weight: 700;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    color:var(--tercer-color);
+    background: rgb(182, 3, 3);
+    cursor: pointer;
 }
 .button-vaciar:hover{
-    cursor: pointer;
-    text-decoration: none;
-    background-color: #0c505a;
-    color: #f2f2f2;
+  letter-spacing: 1px;
+  transition: .5s;
 }
 .button-pedido{
-    background:#28A745;
-    text-decoration: none;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 5px;
-    color:  #f2f2f2;
-    font-weight: 700;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  color:var(--tercer-color);
+  background: var(--segundo-color);
+  cursor: pointer;
 }
 .button-pedido:hover{
-    cursor: pointer;
-    text-decoration: none;
-    background-color: #1e612e;
-    color: #f2f2f2;
+  letter-spacing: 1px;
+  transition: .5s;
 }
 
 
@@ -318,7 +327,7 @@ header .container .car span{
   .about  h3{
     text-align: center;
     padding: 2rem;
-    margin: 2rem 0 0rem 0;
+    margin: 1rem 0 0rem 0;
     font-weight: 700; 
     font-size: 3.5rem;
     line-height: 1.6;
@@ -583,12 +592,12 @@ header .container .car span{
     align-items: center;
     transition: all 0.25s;
 }
-.container-productos .card:hover{
+.container-produccontainer-ctos .card:hover{
     border: 1px solid var(--segundo-color);
     box-shadow: 0 12px 16px rgba(0,0,0,0.2);
 }
 .container-productos .card img{
-    width: 340px;
+    width: 360px;
     height: 300px;
     cursor: pointer;
     object-fit: cover;
@@ -621,23 +630,34 @@ header .container .car span{
 
 
 
-/*carrito*/
+/* carrito */
+
 #cargando{
     display: none;
 }
+
+.container-carrito{
+  background: url(../img/fondo-abour.jpg);
+  padding-top: 4.3rem;
+}
+
 .container-carrito h2{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-weight: 600;
+  text-align: center;
+  /* padding: 2rem; */
+  margin: .1rem 0 0rem 0;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.6;
+  text-decoration: underline var(--segundo-color);
+  color: var(--tercer-color);
 }
 .container-carrito form{
     width: 650px;
     margin:auto;
     padding: 10px 20px;
+    color: var(--tercer-color);
 }
-.container-carrito form .contenido{
-    
+.container-carrito form .contenido{ 
     padding: 10px 20px;
 }
 .container-carrito form .titulo{
@@ -651,7 +671,7 @@ header .container .car span{
     box-sizing: border-box;
     font-size: 17px;
     border-radius: 8px;
-    border:1px solid  #DF691A;
+    border:1px solid  var(--segundo-color);
 }
 #total{
     border: 0; 
@@ -660,14 +680,18 @@ header .container .car span{
     text-align: center;
 }
 #procesar-compra{
-    border: 0;
+    border:1px solid  var(--segundo-color);
     height: 49px;
+    padding: 1rem;
     font-size: 16px;
     outline: none;
     margin: 50px;
+    background-color: var(--segundo-color);
+    
 }
 #volver{
     margin: 48px;
+    padding: 1rem;
 }
 .botones-envio{
     display: flex;
@@ -687,8 +711,15 @@ header .container .car span{
     padding: .75rem;
     border-top: 1px solid #dee2e6;
     text-align: center;
-
+    width: 3rem;
+    height: 3rem;
 }
+
+.tabla td img {
+  width: 8rem;
+  height: 8rem;
+}
+
 .tabla thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
