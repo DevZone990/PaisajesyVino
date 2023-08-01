@@ -695,19 +695,41 @@ header .container .car span{
     outline: none;
     margin: 50px;
     background-color: var(--segundo-color);
+
     
 }
 #volver{
-    margin: 48px;
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  border:1px solid  var(--segundo-color);
+  height: 49px;
+  padding: 1rem;
+  font-size: 16px;
+  outline: none;
+  margin: 50px;
 }
 .botones-envio{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
+@keyframes  miAnimacion{
+0%{
+  transform: scale(1);
+}
+50%{
+  transform: scale(1.3);
+}
+100%{
+  transform: scale(1);
+}
+}
+#volver , #procesar-compra {
+  animation-name: miAnimacion;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+   /* Repetir la animación infinitamente */
+}
 .tabla {
     width: 100%;
     max-width: 100%;
@@ -1017,6 +1039,9 @@ header .container .car svg{
 .menu-icon span{
   font-size: 5rem;
   padding-top: .5rem;
+  width: 70rem;
+  height: 2rem;
+  z-index: 999999999;
 }
 .icomin{
   color: #cccccc;
@@ -1127,7 +1152,6 @@ header .container .ul.active .a{
   border-radius: .5%;
 }
 
-
 .contact{
     background: url(../img/fondo-abour.jpg);
     margin: 0;
@@ -1163,7 +1187,6 @@ footer{
   height: 20vh;
 }
 
-
 }
 
 
@@ -1177,7 +1200,28 @@ footer{
 .container-carrito h2{
   padding-top: 4.3rem;
 }
+.menu-icon{
+  display: flex;
+  z-index: 999999;
+  background-color: #ccc;
 }
+.menu-icon span{
+  font-size: 5rem;
+  padding-top: .5rem;
+}
+.icomin{
+  color: #cccccc;
+  font-size: 3rem;
+  position: absolute;
+  right: 1rem;
+  top:.5rem;
+  display: inline-block;
+}
+.icomin:hover{
+  color: #f2f2f2;
+}
+}
+
 @media (max-width: 399px){
   html{
     font-size: 45%;
@@ -1206,9 +1250,30 @@ footer{
     width: 100%;
 }
 .contenido th #total{
-  font-size: .7rem;
+  font-size: .6rem;
 }
 .container-carrito h2{
   padding-top: 4.3rem;
+}
+#procesar-compra{
+  border:1px solid  var(--segundo-color);
+  height: 49px;
+  padding: 1rem;
+  font-size: 15px;
+  outline: none;
+  margin: 30px;
+  background-color: var(--segundo-color);
+
+  
+}
+#volver{
+display: flex;
+align-items: center;
+border:1px solid  var(--segundo-color);
+height: 49px;
+padding: 1rem;
+font-size: 15px;
+outline: none;
+margin: 30px;
 }
 }
