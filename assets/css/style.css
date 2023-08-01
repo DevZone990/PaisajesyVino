@@ -899,6 +899,10 @@ header .container .car span{
     .review .box-container .box{
         height: 23rem;
     }
+
+    .contact .row-1 form{
+      width: 50%;
+    }
   }
   
   @media (max-width: 770px) {
@@ -930,6 +934,8 @@ header .container .car span{
     .review .box-container .box{
         height: 23rem;
     }
+
+    
 }
 
 /*REALIZAR COMPRA*/
@@ -939,7 +945,16 @@ header .container .car span{
     width: 100%;
 }
 
-  
+.contact .row-1 form{
+  width: 50%;
+}  
+
+ .inputbtn { 
+  position: relative;
+  right: 25%;
+  padding-right: 3rem;
+  font-size: 2rem;
+}
 }
 
 
@@ -970,9 +985,12 @@ header .container .car span{
         width:26rem;
         height: 20rem;
     }
-
+    #contacto h3{
+      font-size: 8rem;
+      padding-bottom: 15%;
+    }
     .contact{
-      height: 80vh;
+      height: 100vh;
     }
     footer{
       height: 20vh;
@@ -1156,28 +1174,47 @@ header .container .ul.active .a{
   border-radius: .5%;
 }
 
-.contact{
-    background: url(../img/fondo-abour.jpg);
-    margin: 0;
-    padding: 1rem;
-    width: 100%;
-    height: 80vh;
+ .contact{
+    
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  }
+  #contacto h3{
+  font-size: 8rem;
+  padding-bottom: 1rem;
+  }
+  .contact .row-1{
+  flex-direction: column;
+  align-items: center;
   }
   .contact .row-1 img{
-    padding-top: 8rem;
-    width: 20rem;
-    height: 20rem;
+  width: 25rem;
+  height: 20rem;
   }
 
   .contact .row-1 form{
-    width: 50%;
-    height: 60vh;
-   
+  width: 100%;
+  height: 60vh;
+  padding:0 ;
   }
 
   .inputbox{
-    position: relative;
-    width: 30rem;
+    width: 100%;
+    text-align: start;
+    padding:1rem 0rem;
+  }
+.inputbox input{
+  padding: 0 3rem;
+  height: 6rem;
+}
+.inputbox span{
+  padding-left: 4rem;
+  font-size: 1.5rem;
+}
+ .textarea span{
+  font-size: 2.3rem;
 }
 .inputbtn {
    font-size: 2rem;
@@ -1224,6 +1261,37 @@ footer{
 .icomin:hover{
   color: #f2f2f2;
 }
+.contact .row-1 form{
+  width: 50%;
+}  
+#contacto h3{
+  font-size: 7rem;
+  padding-bottom: 1.2rem;
+}
+.inputbox input{
+  padding: 0 2rem;
+  height: 5rem;
+}
+.inputbox span{
+  padding-left: 4rem;
+}
+.inputbox{
+  width: 100%;
+  text-align: start;
+  padding:1rem 0rem;
+}
+ .inputbtn { 
+  position: relative;
+  right: 25%;
+  padding-right: 3rem;
+  font-size: 2rem;
+}
+#form{
+  width: 100%;
+  padding: 0;
+
+
+}
 }
 
 @media (max-width: 399px){
@@ -1257,13 +1325,32 @@ footer{
     transform: scale(1);
   }
   }
+  #form{
+    width: 100%;
+    padding: 0;
+    
+}
+ .inputbox{
+   width: 100%;
+   margin: 0;
+   padding:1rem 0;
+  }
+  .contact .row-1 form {
+    padding:2rem;
+  }
 }
 
 
 
 @media (max-width: 358px){
-  .container-carrito form{
+  #form{
     width: 100%;
+    padding: 0;
+    
+
+}
+.contact .row-1{
+  justify-content: center;
 }
 .contenido th #total{
   font-size: .6rem;
@@ -1281,8 +1368,13 @@ footer{
   font-size: 10px;
   margin: 10px;
 }
-
-
+#contacto h3{
+  font-size: 6rem;
+  padding-bottom: 1.2rem;
+}
+.inputbox{
+  margin: 0;
+ }
 @keyframes  miAnimacion{
   0%{
     transform: scale(1);
