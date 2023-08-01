@@ -192,7 +192,7 @@ header .container .car span{
     margin: .125rem 0 0;
     font-size: 1rem;
     color: var(--tercer-color);
-    text-align: left;
+    text-align: center;
     list-style: none;
     background-color: var(--primer-color);
     background-clip: padding-box;
@@ -544,19 +544,21 @@ header .container .car span{
     height: 100vh;
 }
 .modal-img{
-    width: 50%;
+  padding-top: 3rem;
+    width: 30rem;
+    height: 30rem;
 }
 .modal-boton{
     position: absolute;
-    top: 10px;
-    right:10px;
+    top: 70px;
+    right:26rem;
     color:white;
     cursor: pointer;
     font-weight: bold;
     width: 50px;
     height: 50px;
     line-height: 50px;
-    background:#DF691A;
+    background:var(--segundo-color);
     font-size: 2em;
     text-align: center;
     border-radius: 50%;
@@ -608,6 +610,12 @@ header .container .car span{
 }
 .container-productos .card p{
     padding-top: 5px;
+    color: var(--segundo-color);
+}
+ .card .precio{
+  padding-top: 5px;
+  font-size: 1rem;
+  color: var(--tercer-color);
 }
 .container-productos .card a{
     padding:1rem;
@@ -799,6 +807,9 @@ header .container .car span{
   }
   /**/
   @media (max-width: 1024px){
+    html{
+      font-size:85%;
+    }
     .container-productos{
         width: 100%;
         height: auto;
@@ -821,9 +832,13 @@ header .container .car span{
         align-items: center;
         transition: all 0.25s;
     }
+    .about .row .content p{
+      line-height:1.1 ;
+      font-size: 1.5rem;
+  }
     .container-productos .card img{
         width: 229px;
-        height: 290px;
+        height: 260px;
         cursor: pointer;
         object-fit: cover;
     }
@@ -883,17 +898,32 @@ header .container .car span{
         width:25rem;
         height: 200px;
     }
+    .about .row .content{
+      padding: 1rem;
+    }
     .about .row .content p{
         line-height:1.5 ;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .review .box-container .box{
         height: 23rem;
     }
 }
+
+/*REALIZAR COMPRA*/
+@media (max-width: 651px){
+  
+  .container-carrito form{
+    width: 100%;
+}
+
+  
+}
+
+
 @media (max-width: 641px){
     html{
-        font-size:55% ;
+        font-size:40% ;
     }
     .about .row img{
       width:43% ;
@@ -918,20 +948,30 @@ header .container .car span{
         width:26rem;
         height: 20rem;
     }
+
+    .contact{
+      height: 80vh;
+    }
+    footer{
+      height: 20vh;
+    }
 }
 
 
 @media (max-width: 525px){
+  html{
+    font-size: 40%;
+  }
 header{
   height: 7rem;
 }
 
-header .container ul li a{
+header .container ul li .a{
   color:#ccc;
   display: block;
   margin: 3rem;
   padding: .5rem;
-  font-size:2.5rem ;
+  font-size:3rem ;
   text-align:center;
 }
 
@@ -969,6 +1009,7 @@ header .container .car svg{
   left: 60%;
 }
 
+
 .menu-icon{
   display: flex;
   z-index: 3444444;
@@ -998,9 +1039,24 @@ header .container .car svg{
 .car{
   display: none;
 }
+header .container .ul.active .a{
+  font-size: 4rem;
+  text-align: start;
+  width: 100%;
+  margin: 0;
+  padding-top: 3rem;
+}
+
 .car-2{
-  position: relative;
-  display: block;
+  display: flex;
+  justify-content: start;
+}
+.car-2 a{
+  font-size: 4rem;
+  color: var(--tercer-color);
+  text-decoration: none;
+  list-style: none;
+  padding-top: 3rem;
 }
 
 .home .btn{
@@ -1034,7 +1090,7 @@ header .container .car svg{
 }
 .about h3{
   font-size: 3rem;
-  padding: 1rem 0;
+  padding: 3rem 0;
 
 }
 .about .row img{
@@ -1047,6 +1103,11 @@ header .container .car svg{
   font-size: 1.4rem;
   column-count: 2;
 }
+
+.review h1{
+  padding: 2rem;
+}
+
 .container-productos .card{
   width: 18rem;
   height: 30rem;
@@ -1065,6 +1126,57 @@ header .container .car svg{
   width: 95%;
   border-radius: .5%;
 }
+
+
+.contact{
+    background: url(../img/fondo-abour.jpg);
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 80vh;
+  }
+  .contact .row-1 img{
+    padding-top: 8rem;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .contact .row-1 form{
+    width: 50%;
+    height: 60vh;
+   
+  }
+
+  .inputbox{
+    position: relative;
+    width: 30rem;
+}
+.inputbtn {
+   font-size: 2rem;
+}
+
+.container-carrito h2{
+  padding-top: 4.3rem;
+}
+
+footer{
+  height: 20vh;
+}
+
+
+}
+
+
+@media (max-width: 478px){
+  .container-carrito form{
+    width: 100%;
+}
+.contenido th #total{
+  font-size: 1.5rem;
+}
+.container-carrito h2{
+  padding-top: 4.3rem;
+}
 }
 @media (max-width: 399px){
   html{
@@ -1075,4 +1187,28 @@ header .container .car svg{
     font-size: 1.5rem;
     column-count: 1;
   }
+
+  .container-carrito form{
+    width: 100%;
+}
+.contenido th #total{
+  font-size: 1.3rem;
+}
+.container-carrito h2{
+  padding-top: 4.3rem;
+}
+}
+
+
+
+@media (max-width: 340px){
+  .container-carrito form{
+    width: 100%;
+}
+.contenido th #total{
+  font-size: .7rem;
+}
+.container-carrito h2{
+  padding-top: 4.3rem;
+}
 }

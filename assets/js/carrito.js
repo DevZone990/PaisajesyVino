@@ -52,10 +52,10 @@ class Carrito{
         <td>
         <img src="${producto.imagen}" width=100>
         </td>
-        <td>${producto.titulo}</td>
-        <td>${producto.precio}</td>
+        <td style="padding: 1rem;">${producto.titulo}</td>
+        <td> $ ${producto.precio}</td>
         <td>
-        <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
+        <a href="#" class="borrar-producto fa-solid fa-trash" style="color: #458221;" data-id="${producto.id}"></a>
         </td>
         `;
         listaProductos.appendChild(row);
@@ -162,7 +162,7 @@ class Carrito{
             `;
             listaCompra.appendChild(row);
         });
-    }    
+    }   
 
     vaciarLocalStorage(){
         localStorage.clear();        
