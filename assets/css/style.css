@@ -1007,7 +1007,12 @@ header .container ul {
   height: 100vh;
   transition: 1s ease; 
 }
-
+header .container img{
+  width: 9rem;
+}
+header .container{
+ height: 6rem;
+}
 header .container .ul.active{
   right: 0px;
   transition: .8s ease;
@@ -1039,7 +1044,6 @@ header .container .car svg{
 .menu-icon span{
   font-size: 5rem;
   padding-top: .5rem;
-  width: 70rem;
   height: 2rem;
   z-index: 999999999;
 }
@@ -1241,11 +1245,23 @@ footer{
 .container-carrito h2{
   padding-top: 4.3rem;
 }
+
+@keyframes  miAnimacion{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+  }
 }
 
 
 
-@media (max-width: 340px){
+@media (max-width: 358px){
   .container-carrito form{
     width: 100%;
 }
@@ -1256,24 +1272,26 @@ footer{
   padding-top: 4.3rem;
 }
 #procesar-compra{
-  border:1px solid  var(--segundo-color);
-  height: 49px;
-  padding: 1rem;
+  height: 40px;
   font-size: 15px;
-  outline: none;
-  margin: 30px;
-  background-color: var(--segundo-color);
-
-  
+  margin: 10px;
 }
 #volver{
-display: flex;
-align-items: center;
-border:1px solid  var(--segundo-color);
-height: 49px;
-padding: 1rem;
-font-size: 15px;
-outline: none;
-margin: 30px;
+  height: 40px;
+  font-size: 10px;
+  margin: 10px;
 }
+
+
+@keyframes  miAnimacion{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+  }
 }
