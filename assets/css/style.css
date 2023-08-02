@@ -1026,9 +1026,7 @@ header .container .car span{
     .contact{
       height: 100vh;
     }
-    footer{
-      height: 20vh;
-    }
+
 }
 
 
@@ -1081,7 +1079,14 @@ header .container .car {
 header .container .car svg{
   font-size: 1.5rem;
 }
-
+.footer .shar .wsp a{
+  padding-left: 1rem;
+  font-size: 3rem;
+}
+.footer .shar .ig a{
+  padding-right: 1rem;
+  font-size: 3rem;
+}
 .dropdown-menu{
   position: absolute;
   top: 100%;
@@ -1258,9 +1263,7 @@ header .container .ul.active .a{
   padding-top: 4.3rem;
 }
 
-footer{
-  height: 20vh;
-}
+
 
 }
 
@@ -1351,7 +1354,7 @@ footer{
 
 @media (max-width: 399px){
   html{
-    font-size: 45%;
+    font-size: 47%;
   }
   .about .row .content p{
     line-height:1.1 ;
@@ -1403,6 +1406,7 @@ footer{
     cursor: pointer;
     object-fit: cover;
 }
+
 }
 
 
