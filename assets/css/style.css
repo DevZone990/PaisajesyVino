@@ -305,39 +305,40 @@ header .container .car span{
   /* End Home 
 
 /* /* Start about------------------------------- */
-.about{
+.page .about{
     width: 100%;
     height: 100vh;
     background: url(../img/fondo-abour.jpg);
-    padding: 4rem;
+    padding: 2rem;
   }
   .row{
     display: flex;
     align-items: center;
     border-radius: .5rem;
     margin: 0;
+    flex-direction: column;
   }
-  .about .row img{
+  .page .about .row img{
     width: 100%;
-    height: 50vh;
-    object-fit: cover;
+    height: 12rem;
+    object-fit: contain;
     border-radius: .5rem;
   }
   
-  .about  h3{
+  .page .about  h3{
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem 0 0rem 0;
     font-weight: 700; 
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.6;
     text-decoration: underline var(--segundo-color);
     color:var(--tercer-color);
   }
-  .about .row .content p{
+  .page .about .row .content p{
     color: var(--tercer-color);
     text-transform:none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: .9rem;
     line-height:1.4;
   }
@@ -830,13 +831,14 @@ header .container .car span{
   }
   
   .footer .credit{
-    font-size: 1rem;
+    font-size: 2rem;
     color: #fff;
     padding: .5rem;
   }
   
   .footer .credit a{
     color: var(--segundo-color);
+    font-weight: bold;
   }
   .footer  .logo-f img{
     width: 10rem;
@@ -868,10 +870,17 @@ header .container .car span{
         align-items: center;
         transition: all 0.25s;
     }
-    .about .row .content p{
-      line-height:1.1 ;
-      font-size: 1.5rem;
-  }
+    .page .about h3{
+      font-size: 4rem;
+    }
+     .page .about .row img{
+      width:43% ;
+      height: 30vh;
+      object-fit: contain;
+    }
+    .page .about .row .content p{
+      font-size: 1.2rem;
+    }
     .container-productos .card img{
         width: 229px;
         height: 260px;
@@ -897,8 +906,17 @@ header .container .car span{
        
     }
     .home .titulo h2{
-        font-size: 7rem;
-    }
+      font-size: 8rem;
+  }
+    .home .titulo p{
+    font-size: 3rem;
+  }
+    .home .titulo #palabra-cambiante{
+    font-size: 2.5rem;
+  }
+    .btn{
+    font-size: 3rem;
+  }
     .container-productos{
         padding-top: 5rem;
     }
@@ -906,9 +924,13 @@ header .container .car span{
         width: 26rem;
         height: 36rem;
     }
-    .container-productos .card img{
-         width: 26rem;
-        height: 250px;
+    .page .about .row img{
+      width:53% ;
+      height: 30vh;
+      object-fit: contain;
+    }
+    .page .about .row .content p{
+      font-size: 1.5rem;
     }
     .review .box-container .box{
         height: 23rem;
@@ -932,6 +954,15 @@ header .container .car span{
     .home .titulo h2{
         font-size: 8rem;
     }
+    .home .titulo p{
+      font-size: 3rem;
+    }
+    .home .titulo #palabra-cambiante{
+      font-size: 2.5rem;
+    }
+    .btn{
+      font-size: 3rem;
+    }
     .container-productos{
         padding-top: 5rem;
         justify-content: space-around;
@@ -945,23 +976,61 @@ header .container .car span{
         height: 200px;
     }
     
-    .about .row .content{
+    .page .about .row{
+      flex-direction: column;
+    }
+    .page .about .row img{
+      width:53% ;
+      height: 30vh;
+      object-fit: contain;
+    }
+    .page .about .row .content{
       padding: 1rem;
     }
-    .about .row .content p{
+    .page .about .row .content p{
         line-height:1.5 ;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .review .box-container .box{
         height: 23rem;
     }
 
-    
+    .footer .credit{
+      font-size: 2rem;
+      color: #fff;
+    }
 }
 
 /*REALIZAR COMPRA*/
 @media (max-width: 651px){
-  
+  .home .titulo h2{
+    font-size: 8rem;
+}
+.home .titulo p{
+  font-size: 3rem;
+}
+.home .titulo #palabra-cambiante{
+  font-size: 2.5rem;
+}
+.btn{
+  font-size: 3rem;
+}
+.page .about h3{
+  font-size: 10rem;
+}
+.page .about .row{
+  flex-direction: column;
+}
+.page .about .row img{
+  width:53% ;
+  height: 30vh;
+  object-fit: contain;
+}
+
+.page .about .row .content p{
+    line-height:1.5 ;
+    font-size: 1.5rem;
+}
   .container-carrito form{
     width: 100%;
 }
@@ -984,14 +1053,34 @@ header .container .car span{
     html{
         font-size:40% ;
     }
-    .about .row img{
-      width:43% ;
-      height: 40vh;
-      object-fit: cover;
+    .home .titulo h2{
+      font-size: 10rem;
+      padding-bottom: 2rem;
+  }
+  .home .titulo p{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+  .home .titulo #palabra-cambiante{
+    font-size: 3.5rem;
+  }
+  .btn{
+    font-size: 4rem;
+  }
+  .page .about h3{
+    font-size: 5rem;
+  }
+  .page .about .row{
+    flex-direction: column;
+  }
+    .page .about .row img{
+      width:63% ;
+      height: 35vh;
+      object-fit: contain;
     }
-    .about .row .content p{
-        line-height:1.6 ;
-        font-size: 1.2rem;
+    .page .about .row .content p{
+        line-height:1.2 ;
+        font-size: 2.2rem;
     }
     .review .box-container .box{
         height: 23rem;
@@ -1026,7 +1115,28 @@ header .container .car span{
     .contact{
       height: 100vh;
     }
-
+    .footer .shar .wsp a{
+      padding-left: 1rem;
+      font-size: 3rem;
+    }
+    .footer .shar .ig a{
+      padding-right: 1rem;
+      font-size: 3rem;
+    }
+    .footer .links a{
+      padding: .7rem 2rem;
+      padding-top: 1.7rem;
+      font-size: 1.8rem;
+    }
+    .footer .credit{
+      font-size: 2rem;
+      color: #fff;
+      padding: .5rem;
+    }
+    
+    .footer  .logo-f img{
+      width: 15rem;
+    }
 }
 
 
@@ -1174,20 +1284,19 @@ header .container .ul.active .a{
   display: grid;
   place-items: center;
 }
-.about h3{
+.page .about h3{
   font-size: 3rem;
   padding: 3rem 0;
 
 }
-.about .row img{
+.page .about .row img{
   width:70% ;
   height: 30vh;
-  object-fit: cover;
+  object-fit: contain;
 }
-.about .row .content p{
+.page .about .row .content p{
   line-height:1.1 ;
-  font-size: 1.4rem;
-  column-count: 2;
+  font-size: 2.2rem;
 }
 
 .review h1{
@@ -1263,7 +1372,9 @@ header .container .ul.active .a{
   padding-top: 4.3rem;
 }
 
-
+.footer .credit{
+  font-size: 2.5rem;
+}
 
 }
 
@@ -1356,17 +1467,26 @@ header .container .ul.active .a{
   html{
     font-size: 47%;
   }
-  .about .row .content p{
+  .page .about h3{
+    font-size: 3rem;
+    padding: 3rem 0;
+  
+  }
+  .page .about .row img{
+    width:70% ;
+    height: 20vh;
+    object-fit: contain;
+  }
+  .page .about .row .content p{
     line-height:1.1 ;
-    font-size: 1.5rem;
-    column-count: 1;
+    font-size: 1.8rem;
   }
 
   .container-carrito form{
     width: 100%;
 }
 .contenido th #total{
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .container-carrito h2{
   padding-top: 4.3rem;
