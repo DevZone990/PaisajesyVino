@@ -570,6 +570,20 @@ header .container .car span{
 
 
 /*productos-card*/
+.page{
+  background: url(../img/fondo-abour.jpg);
+  padding-top: 6rem;
+}
+.page h3{
+  text-align: center;
+  padding-top: 2rem;
+  margin: 0;
+  font-weight: 700; 
+  font-size: 5rem;
+  line-height: 1.6;
+  text-decoration: underline var(--segundo-color);
+  color:var(--tercer-color);
+}
 .container-productos{
     width: 100%;
     max-width: 140rem;
@@ -578,8 +592,8 @@ header .container .car span{
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    padding-top: 5rem;
-    background: url(../img/fondo-abour.jpg);
+    /* padding-top: 5rem; */
+    /* background: url(../img/fondo-abour.jpg); */
 }
 .container-productos .card{
     width: 360px;
@@ -1322,6 +1336,18 @@ footer{
   height: 27rem;
 }
 }
+@media (max-width: 424px){
+  .container-productos .card{
+    width: 50rem;
+    height: 70rem;
+  }
+  .container-productos .card img{
+    width:50rem;
+    height: 40rem;
+    cursor: pointer;
+    object-fit: cover;
+}
+}
 
 @media (max-width: 399px){
   html{
@@ -1367,6 +1393,16 @@ footer{
   .contact .row-1 form {
     padding:2rem;
   }
+  .container-productos .card{
+    width: 45rem;
+    height: 65rem;
+  }
+  .container-productos .card img{
+    width: 45rem;
+    height: 40rem;
+    cursor: pointer;
+    object-fit: cover;
+}
 }
 
 
