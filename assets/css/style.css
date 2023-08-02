@@ -899,6 +899,12 @@ header .container .car span{
     .review .box-container .box{
         height: 23rem;
     }
+    .container-productos .card p{
+      font-size: 1.3rem;
+    }
+    .container-productos .card span{
+       font-size: 1.3rem;
+    }
 
     .contact .row-1 form{
       width: 50%;
@@ -924,6 +930,7 @@ header .container .car span{
         width:25rem;
         height: 200px;
     }
+    
     .about .row .content{
       padding: 1rem;
     }
@@ -955,6 +962,7 @@ header .container .car span{
   padding-right: 3rem;
   font-size: 2rem;
 }
+
 }
 
 
@@ -978,12 +986,24 @@ header .container .car span{
         justify-content: space-around;
     }
     .container-productos .card{
-        width: 25rem;
-        height: 33rem;
+        width: 34rem;
+        height: 49rem;
     }
     .container-productos .card img{
-        width:26rem;
-        height: 20rem;
+        width:34rem;
+        height: 29rem;
+    }
+    .container-productos .card p{
+      font-size: 1.9rem;
+    }
+    .container-productos .card span{
+       font-size: 1.9rem;
+    }
+    .container-productos .card a{
+      font-size: 2rem;
+    }
+    .container-productos .card h5{
+       font-size: 1.8rem;
     }
     #contacto h3{
       font-size: 8rem;
@@ -1156,12 +1176,12 @@ header .container .ul.active .a{
 }
 
 .container-productos .card{
-  width: 18rem;
-  height: 30rem;
+  width: 30rem;
+  height: 40rem;
 }
 .container-productos .card img{
-  width:18rem;
-  height: 17rem;
+  width:30rem;
+  height: 25rem;
 }
 .review .box-container .box p{
   line-height: 1.5;
@@ -1289,8 +1309,17 @@ footer{
 #form{
   width: 100%;
   padding: 0;
+}
 
 
+.container-productos .card{
+  width: 30rem;
+  height: 50rem;
+  margin: 10px;
+}
+.container-productos .card img{
+  width:30rem;
+  height: 27rem;
 }
 }
 
@@ -1346,8 +1375,6 @@ footer{
   #form{
     width: 100%;
     padding: 0;
-    
-
 }
 .contact .row-1{
   justify-content: center;
@@ -1387,3 +1414,4 @@ footer{
   }
   }
 }
+
