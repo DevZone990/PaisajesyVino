@@ -33,33 +33,35 @@
   <!-- ------------------------ CONTACTO------------------------------- -->
   <section class="contact oculto hidden mob" id="contacto">
     <h3> Contactanos </h3>
+    <div class="contacto2">
+      <div class="img-c">
+      <img src="assets/img/logo pyv png letras blancas.png" alt="contact">
+      </div>
 
-    <div class="row-1">
-    <img src="assets/img/logo pyv png letras blancas.png" alt="contact">
+      <form action="" method="POST" id="form">
+        <div class="inputbox">
+            <input type="text" required="required">
+            <span class="fas fa-user"> nombre completo</span>
+        </div>
 
-        <form action="" method="POST" id="form">
-            <div class="inputbox">
-                <input type="text" required="required">
-                <span class="fas fa-user"> nombre completo</span>
-            </div>
+        <div class="inputbox">
+          <input type="email" name="email" id="" required="required">
+          <span class="fas fa-envelope"> Email</span>
+       </div>
 
-            <div class="inputbox">
-              <input type="email" name="email" id="" required="required">
-              <span class="fas fa-envelope"> Email</span>
-           </div>
+        <div class="inputbox">
+          <input type="number" name="phone" id="" required="required" >
+          <span class="fas fa-phone"> Numero</span>
+        </div>
 
-            <div class="inputbox">
-              <input type="number" name="phone" id="" required="required">
-              <span class="fas fa-phone"> numero</span>
-            </div>
+        <div class="inputbox textarea">
+              <textarea id="textarea"  name="mensaje" required="required"></textarea>
+              <span>Escribe un mensaje</span>
+        </div>
 
-            <div class="inputbox textarea">
-                  <textarea id="textarea"  name="mensaje" required="required"></textarea>
-                  <span>Escribe un mensaje</span>
-            </div>
-
-            <input type="submit" class="inputbtn" id="button" value="Enviar Mensaje" required > 
-        </form>
+        <input type="submit" class="inputbtn" id="button" value="Enviar Mensaje" required > 
+    </form>
+    </div>
 </section>
 </main>
   
