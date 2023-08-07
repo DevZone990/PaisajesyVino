@@ -63,7 +63,6 @@ body {
   
   .button:hover{
     background: var(--segundo-color);
-    letter-spacing: .2rem;
     transform: scale(.9);
     transition: .5s;
   }
@@ -526,120 +525,7 @@ header .container .car span{
     transition: .5s;
   } 
 
-  /* .contact .row-1{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-evenly;
-  }
-  .contact .row-1 img{
-    margin-top: -2rem;
-    align-items: center;
-    justify-content: center;
-    width: 30rem;
-    height: 25rem;
-    object-fit:contain;
-  }
   
-  
-  .contact .row-1 form{
-    width: 40%;
-    height: 60vh;
-    text-align: end;
-    padding: 0;
-    padding-left: 4rem;
-  }
-
-
-.inputbox{
-    position: relative;
-    width: 30rem;
-    padding: 5px;
-    margin-bottom:  5px;
-}
-.inputbox input{
-    height: 4rem;
-    width: 100%;
-    padding: .5rem;
-    border: 2px solid var(--tercer-color);
-    border-radius: 5px;
-    outline: none;
-    color: var(--segundo-color);
-    font-size: 1.3rem;
-    background: transparent;
-}
-
-.inputbox span{
-    position: absolute;
-    left: 0;
-    padding: 10px;
-    pointer-events: none;
-    font-size: 1rem;
-    color: var(--tercer-color);
-    transition: .5s;
-    letter-spacing: 2px;
-}
-
- .inputbox textarea{
-    width: 100%;
-    padding: 1.2rem;
-    border: 2px solid var(--tercer-color);
-    border-radius: 5px;
-    outline: none;
-    color: var(--segundo-color);
-    font-size: 1.3rem;
-    background: transparent;
-  }
-
- .textarea span{
-    font-size: 1.5rem;
-  }
-
-.inputbox input:valid ~ span,
-.inputbox input:focus ~ span
-{
-    color: var(--tercer-color);
-    transform: translateX(10px) translateY(-7px);
-    font-size: 1.1rem;
-    padding: 0 10px;
-    background: #770101;
-    border-left: 1px solid var(--tercer-color);
-    border-right: 1px solid var(--tercer-color);
-}
-
-
-.inputbox textarea:focus ~ span{
-    color: var(--tercer-color);
-    transform: translateX(10px) translateY(-7px);
-    font-size: 1.5rem;
-    padding: 0 10px;
-    background: #940202;
-    border-left: 1px solid var(--tercer-color);
-    border-right: 1px solid var(--tercer-color);
-}
-
- .inputbtn{
-    border-radius: 1.3rem;
-    text-align: center;
-    padding-top: 2rem;
-    display: inline-block;
-    padding: .5rem 2.5rem;
-    font-size: 1rem;
-    color:var(--tercer-color);
-    background: transparent;
-    border: 2px solid var(--segundo-color);
-    cursor: pointer;
-}
-
-.inputbtn:hover{
-    letter-spacing: .3rem;
-    transition: .5s;
-  }
-
-  .inputbtn:active{
-    scale: 1.2;
-    transition: .5s;
-  } */
 /*productos-modal*/
 .modal{
     width: 100%;
@@ -1624,8 +1510,11 @@ font-size: 1.5rem;
   width:30rem;
   height: 27rem;
 }
+.home .titulo #palabra-cambiante{
+  font-size: 2.5rem;
 }
-@media (max-width: 424px){
+}
+@media (max-width: 425px){
   .container-productos .card{
     width: 50rem;
     height: 70rem;
@@ -1642,6 +1531,11 @@ font-size: 1.5rem;
   html{
     font-size: 47%;
   }
+
+  .home .titulo #palabra-cambiante{
+    font-size: 2rem;
+  }
+ 
   .page .about h3{
     font-size: 3rem;
     padding: 3rem 0;
@@ -1721,6 +1615,12 @@ font-size: 1.5rem;
 /* .contact .row-1{
   justify-content: center;
 } */
+.home .titulo #palabra-cambiante{
+  font-size: 1.5rem;
+}
+.home .titulo p{
+  font-size: 1.5rem;
+}
 .contenido th #total{
   font-size: .6rem;
 }
