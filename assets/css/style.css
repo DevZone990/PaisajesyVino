@@ -126,7 +126,6 @@ header .container .car {
     width:3em;
     height:2rem;
     padding-right: 1rem;
-
 }
 header .container .car span{
     align-items: start;
@@ -139,6 +138,7 @@ header .container .car span{
     bottom: 130%;
     left: 60%;
 }
+
 /*menu*/
 .menu{
     width: 95%;
