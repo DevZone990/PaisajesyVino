@@ -126,6 +126,7 @@ header .container .car {
     width:3em;
     height:2rem;
     padding-right: 1rem;
+
 }
 header .container .car span{
     align-items: start;
@@ -138,7 +139,6 @@ header .container .car span{
     bottom: 130%;
     left: 60%;
 }
-
 /*menu*/
 .menu{
     width: 95%;
@@ -248,6 +248,7 @@ header .container .car span{
 
 
 /* Start Home -------------------------------------*/
+
 .home{
     min-height: 100vh;
     display:flex;
@@ -1511,10 +1512,14 @@ font-size: 1.5rem;
   height: 27rem;
 }
 .home .titulo #palabra-cambiante{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+
 }
 @media (max-width: 425px){
+  .home .titulo #palabra-cambiante{
+    font-size:2rem;
+  }
   .container-productos .card{
     width: 50rem;
     height: 70rem;
@@ -1533,7 +1538,7 @@ font-size: 1.5rem;
   }
 
   .home .titulo #palabra-cambiante{
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
  
   .page .about h3{
