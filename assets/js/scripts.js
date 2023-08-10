@@ -1,3 +1,5 @@
+
+//--------------------------------------
 let navbar = document.querySelector('.ul');
 
 document.querySelector('#menu-btn').onclick = ()=>{
@@ -20,7 +22,7 @@ Window.onscroll = ()=>{
 }
 
 // cambiar palabras-----------------------------------------------
-var palabras = ["Disfrutar del viaje", "vivir experiencias", "probar un buen vino"]; // Array de palabras
+var palabras = ["Disfrutar del viaje", "vivir experiencias", "probar los mejores vinos"]; // Array de palabras
 var indice = 0; // Índice de la palabra actual
 
 function cambiarPalabra() {
@@ -187,3 +189,7 @@ function solonumeros(e){
         return false;
     }
 } */
+
+
+
+
