@@ -1,3 +1,21 @@
+// leer mas
+let i = 0;
+let button = document.querySelector('#button').addEventListener('click', function() {
+    if (!i) {
+        document.getElementById('leerMas').style.display = 'inline';
+        document.getElementById('card').style.height = '800px';
+        document.getElementById('button').innerHTML = 'Leer menos';
+        i = 1;
+    } else {
+        document.getElementById('leerMas').style.display = 'none';
+        document.getElementById('card').style.height = '600px';
+        document.getElementById('button').innerHTML = 'Leer más';
+        i = 0;
+    }
+
+})
+
+//--------------------------------------
 let navbar = document.querySelector('.ul');
 
 document.querySelector('#menu-btn').onclick = ()=>{
@@ -20,7 +38,7 @@ Window.onscroll = ()=>{
 }
 
 // cambiar palabras-----------------------------------------------
-var palabras = ["Disfrutar del viaje", "vivir experiencias", "probar un buen vino"]; // Array de palabras
+var palabras = ["Disfrutar del viaje", "vivir experiencias", "probar los mejores vinos"]; // Array de palabras
 var indice = 0; // Índice de la palabra actual
 
 function cambiarPalabra() {
@@ -187,3 +205,7 @@ function solonumeros(e){
         return false;
     }
 } */
+
+
+
+
